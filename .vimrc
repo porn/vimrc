@@ -13,51 +13,12 @@
 	set runtimepath+=~/.vim/doc
 	autocmd BufNewFile,Bufread *.php,*.php3,*.php4 set keywordprg="help"
 
-	" oblibene barevne schema
-	colorscheme torte_custom
-
-	" C-] vystredi radku na kterou se skace
-	map  zt
-
 	" load .vimrc upon every save
 	if has("autocmd")
 		autocmd BufWritePost .vimrc source $MYVIMRC
 	endif
 
-	" V insert módu použije po stisku tabulátoru patřičný počet mezer místo
-	" vložení znaku pro tabulátor. Mezery se místo tabulátoru vkládají také při
-	" automatickém odsazování a odsazování pomocí příkazů < a >. Zdá se mi
-	" přirozenější pro odsazování používat mezery než tabulátory, protože pak máte
-	" jistotu, že váš kód bude vypadat všude stejně. Pokud chcete do souboru přece
-	" jenom vložit znak tabulátoru (např. při editování souboru Makefile, kde je
-	" nezbytným), můžete použít CTRL-V a Tab.
-	"set expandtab
-
-
-	" Zavede se navíc "trochu chytřejší odsazování" - např. VIM automaticky zvětší
-	" odsazení po řádku končícím "{" nebo upraví odsazení po napsání "}" na
-	" začátku nového řádku.
-	set smartindent
-
-	" Nastaveni kodovani
-	set encoding=utf8
-	set fileencoding=utf8
-
-	" wget  http://ftp.linux.cz/pub/localization/OpenOffice.org/devel/Czech/spell_checking/cs_CZ.zip
-	" unzip -x cs_CZ.zip cs_CZ.aff cs_CZ.dic
-	" vim -e -s << EOF
-	" :mkspell cs cs_cz
-	" :!cp cs.utf-8.spl $VIMRUNTIME/spell
-	" EOF
-	" Posleze nastavit:
-	" set spelllang=cs
-	" Je mozne kontrolovat i vicejazycny text:
-	" set spelllang=cs,en
-	" pro zvyrazneni slov pouzit:
-	" set spell
-	set spelllang=cs
-
-	" }
+" }
 
 " Key Mappings {
 
@@ -77,6 +38,10 @@
 		" Space to toggle folds
 		nnoremap <Space> za
 		vnoremap <Space> za
+
+		" move the line with the tag definition at top of window when jumping
+		map <C-]> <C-]>zt
+		map g<LeftMouse> g<LeftMouse>zt
 
 	" }
 
@@ -132,7 +97,7 @@
 
 	" }
 
-	" Windows and Tabs Mappings {
+	" Windows and Tabs Switching {
 
 		" Easier moving in tabs
 		map <S-H> gT
@@ -151,24 +116,17 @@
 
 " General {
 	filetype plugin indent on  	" Automatically detect file types.
-	syntax on 					" syntax highlighting
-	set mouse=a					" automatically enable mouse usage
-	set history=100  			" Store a ton of history (default is 20)
+
+	set encoding=utf8			" character encoding used inside Vim
+	set fileencoding=utf8		" character encoding for the files
 
 	" Vim UI {
 
-		" colorize 80th column (requires vim >= 7.3)
-		if exists('+colorcolumn')
-			set colorcolumn=80
-		endif
+		colorscheme torte_custom		" my favorite colorscheme
 
-		if has('cmdline_info')
-			set ruler                  	" show the ruler
-			" set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " a ruler on steroids
-			set showcmd                	" show partial commands in status line and
-										" selected characters/lines in visual mode
-		endif
-
+		syntax on 						" syntax highlighting
+		set mouse=a						" automatically enable mouse usage
+		set history=100  				" Store more history (default is 20)
 		set showmatch					" show matching brackets/parenthesis
 		set incsearch					" find as you type search
 		set hlsearch					" highlight search terms
@@ -176,12 +134,25 @@
 		set wildmode=list:longest,full	" command <Tab> completion, list matches, then longest common part, then all.
 		set scrolloff=3 				" minimum lines to keep above and below cursor
 
+		" colorize 80th column (requires vim >= 7.3)
+		if exists('+colorcolumn')
+			set colorcolumn=80
+		endif
+
+		if has('cmdline_info')
+			set ruler					" show the ruler
+			" set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " a ruler on steroids
+			set showcmd					" show partial commands in status line and
+										" selected characters/lines in visual mode
+		endif
 
 	" }
 
 	" Formatting {
-		set shiftwidth=4               	" use indents of 4 spaces
-		set tabstop=4 					" an indentation every four columns
+		set shiftwidth=4		" use indents of 4 spaces
+		set tabstop=4 			" an indentation every four columns
+		set smartindent			" smart autoindenting when starting a new line
+
 	" }
 
 " }
@@ -207,7 +178,7 @@
 " }
 
 " Use local vimrc if available {
-    if filereadable(expand("~/.vimrc.local"))
-        source ~/.vimrc.local
-    endif
+	if filereadable(expand("~/.vimrc.local"))
+		source ~/.vimrc.local
+	endif
 " }
