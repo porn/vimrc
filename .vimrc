@@ -69,7 +69,7 @@
 
 		" map remove trailing spaces, save all and session save here
 		map <F2> mq:%s/\s\+$//e<CR>:wa<CR>:exe "mks! ".v:this_session<CR>
-		map! <F2> <ESC> mq:%s/\s\+$//e<CR>:wa<CR>:exe "mks! ".v:this_session<CR>
+		map! <F2> <ESC>mq:%s/\s\+$//e<CR>:wa<CR>:exe "mks! ".v:this_session<CR>
 
 		" quit all
 		map <F3> :qa<CR>
