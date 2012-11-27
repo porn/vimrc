@@ -24,6 +24,9 @@
 
 	" Other {
 
+		" fix for screen / byobu (Del, Home, End)
+		imap <ESC>[7~ <Home>
+
 		" jj instead of esc
 		inoremap jj <ESC>
 
