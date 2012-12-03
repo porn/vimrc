@@ -10,7 +10,7 @@ if exists("syntax_on")
   syntax reset
 endif
 "colorscheme default
-let g:colors_name = "torte"
+let g:colors_name = "torte_custom"
 
 " hardcoded colors :
 " GUI Comment : #80a0ff = Light blue
@@ -36,6 +36,10 @@ highlight Comment    ctermfg=Blue
 highlight StatusLine ctermfg=blue	ctermbg=white
 highlight Statement  ctermfg=Yellow			cterm=NONE
 highlight Type						cterm=NONE
+highlight TabLineFill ctermfg=LightGrey
+highlight TabLine     ctermfg=Black       ctermbg=LightGrey
+highlight TabLineSel  term=reverse,bold
+highlight Title       ctermfg=White
 
 " Presah 80 znaku
 highlight OverLength ctermbg=Blue
