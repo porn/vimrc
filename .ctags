@@ -1,0 +1,4 @@
+--python-kinds=-i
+--PHP-kinds=-v
+--regex-PHP=/interface\s+([^ ]+)/\1/c/
+--regex-PHP=/(abstract\s+|final\s+).*function\s+\&?\s*([^ (]+)/\2/f/
