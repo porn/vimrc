@@ -43,6 +43,10 @@
 		nnoremap <Space> za
 		vnoremap <Space> za
 
+		" Enter to recursive toggle folds
+		nnoremap <Return> zA
+		vnoremap <Return> zA
+
 		" move the line with the tag definition at top of window when jumping
 		map <C-]> <C-]>zt
 		map g<LeftMouse> g<LeftMouse>zt
@@ -115,6 +119,9 @@
 		noremap <C-K> <C-W>k<C-L>
 		noremap <C-L> <C-W>l<C-L>
 
+		" moving (reordering) tabs
+		nnoremap <silent> l :execute 'silent! tabmove ' . tabpagenr()<CR>
+		nnoremap <silent> h :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 	" }
 " }
 
@@ -123,6 +130,8 @@
 
 	set encoding=utf8			" character encoding used inside Vim
 	set fileencoding=utf8		" character encoding for the files
+	let g:netrw_liststyle=3     " Use tree-mode as default view
+
 
 	" Vim UI {
 
