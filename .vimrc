@@ -1,5 +1,5 @@
 " Modeline and Notes {
-"	vim: set foldmarker={,} foldlevel=0 foldmethod=marker
+"	vim: set foldmarker={,} foldlevel=0 foldmethod=marker:
 "
 "	Hosted on github: TODO
 " }
@@ -7,6 +7,7 @@
 " TODO unsorted ... {
 	runtime! debian.vim
 
+	set modeline
 	set runtimepath+=~/.vim/
 
 	" php offline manuals
