@@ -41,9 +41,13 @@ highlight TabLine     ctermfg=Black       ctermbg=LightGrey
 highlight TabLineSel  term=reverse,bold
 highlight Title       ctermfg=White
 
+highlight CursorLine   cterm=NONE ctermbg=DarkRed
+highlight CursorColumn cterm=NONE ctermbg=LightGrey ctermfg=white
+" nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
 " Presah 80 znaku
-highlight OverLength ctermbg=Blue
-match OverLength /\%>80v.\+/
+"highlight OverLength ctermbg=Blue
+"match OverLength /\%>80v.\+/
 
 " zvyrazni mezery na zacatku radku
 "highlight LeadingSpace ctermbg=Blue
