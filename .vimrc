@@ -112,11 +112,11 @@
 		map <S-L> gt
 
 		" Easier moving in windows
-		map <C-J> <C-W>j
-		map <C-H> <C-W>h
+		noremap <C-J> <C-W>j
+		noremap <C-K> <C-W>k
 
 		" switching to left/right also re-draws the screen
-		noremap <C-K> <C-W>k<C-L>
+		noremap <C-H> <C-W>h<C-L>
 		noremap <C-L> <C-W>l<C-L>
 
 		" moving (reordering) tabs
