@@ -1,6 +1,6 @@
 " Vim filetype plugin file
 " Language:	yml
 
-set foldmethod=indent
-set foldnestmax=2
-set shiftwidth=2
+setlocal foldmethod=indent
+setlocal foldnestmax=2
+setlocal shiftwidth=2
