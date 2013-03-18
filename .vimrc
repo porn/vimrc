@@ -146,11 +146,7 @@
 		set wildmenu					" show list instead of just completing
 		set wildmode=list:longest,full	" command <Tab> completion, list matches, then longest common part, then all.
 		set scrolloff=3 				" minimum lines to keep above and below cursor
-
-		" colorize 80th column (requires vim >= 7.3)
-		if exists('+colorcolumn')
-			set colorcolumn=80
-		endif
+		set colorcolumn=80				" colorize 80th column (requires vim >= 7.3)
 
 		if has('cmdline_info')
 			set ruler					" show the ruler
