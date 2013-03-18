@@ -1,5 +1,5 @@
 " Modeline and Notes {
-"	vim: set foldmarker={,} foldlevel=0 foldmethod=marker:
+"	vim: set foldmarker={,} foldmethod=marker:
 "
 "	Hosted on github: TODO
 " }
