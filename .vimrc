@@ -138,6 +138,7 @@
 	" Vim UI {
 
 		colorscheme torte_custom		" my favorite colorscheme
+		autocmd VimResized * wincmd =	" automatically resize win split on window resize
 
 		syntax on 						" syntax highlighting
 		set mouse=a						" automatically enable mouse usage
