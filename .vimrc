@@ -46,6 +46,8 @@
 		" Enter to recursive toggle folds
 		nnoremap <Return> zA
 		vnoremap <Return> zA
+		autocmd CmdwinEnter * nunmap <Return>
+		autocmd CmdwinLeave * nnoremap <Return> zA
 
 		" move the line with the tag definition at top of window when jumping
 		map <C-]> <C-]>zt
