@@ -171,6 +171,10 @@
 
 " Plugins {
 
+	" Gundo {
+		nnoremap <leader>g :GundoToggle<CR>
+	" }
+	
 	" VCS commands {
 		nmap <leader>vs :VCSStatus<CR>
 		nmap <leader>vc :VCSCommit<CR>
