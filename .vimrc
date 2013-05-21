@@ -78,8 +78,9 @@
 	" <F2> - <Fx> Mappings {
 
 		" map remove trailing spaces, save all and session save here
-		map <F2> mq:%s/\s\+$//e<CR>:wa<CR>:exe "mks! ".v:this_session<CR>
-		map! <F2> <ESC>mq:%s/\s\+$//e<CR>:wa<CR>:exe "mks! ".v:this_session<CR>
+		" TODO breaks last search pattern
+		nmap <F2> :%s/\s\+$//e<CR>:wa<CR>:exe "mks! ".v:this_session<CR>
+		imap <F2> <ESC><F2>
 
 		" quit all
 		map <F3> :qa<CR>
