@@ -175,15 +175,19 @@
 	" Gundo {
 		nnoremap <leader>g :GundoToggle<CR>
 	" }
-	
+
 	" VCS commands {
+		" by default: <leader>cs
 		nmap <leader>vs :VCSStatus<CR>
-		nmap <leader>vc :VCSCommit<CR>
+		" by default: <leader>cn
 		nmap <leader>vb :VCSBlame<CR>
-		nmap <leader>va :VCSAdd<CR>
+		" by default: <leader>cd
 		nmap <leader>vd :VCSDiff<CR>
+		" by default: <leader>cl
 		nmap <leader>vl :VCSLog<CR>
+		" by default: <leader>cu
 		nmap <leader>vu :VCSUpdate<CR>
+		" by default: <leader>cv
 		nmap <leader>vv :VCSVimDiff<CR>
 	" }
 
