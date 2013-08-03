@@ -93,8 +93,8 @@
 		map <F4> :TlistToggle<CR>
 
 		" toggle paste / nopaste
-		map <F5> :set invpaste<bar>set paste?<CR>
-		map! <F5> <ESC>:set invpaste<bar>set paste?<CR>i
+		set pastetoggle=<F5>
+		nmap <F5> :set invpaste<bar>set paste?<CR>
 
 		" toggle wrap / nowrap
 		map <F6> :set invwrap<bar>set wrap?<CR>
