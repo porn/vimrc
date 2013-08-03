@@ -86,9 +86,8 @@
 		map <F3> :qa<CR>
 		map! <F3> <ESC>:wa<CR>
 
-		" map paired tag closing (TODO: make work with one character tags)
-		" inoremap <F4> </><ESC>2F<lyef>f/pF<i
-		inoremap <F4> </><ESC>2F<lywf>f/pF<i
+		" map paired tag closing
+		inoremap <F4> </><ESC>2F<yef/pF<xF<i
 
 		" toggle taglist (taglist plugin)
 		map <F4> :TlistToggle<CR>
