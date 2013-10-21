@@ -25,6 +25,10 @@
 
 	" Other {
 
+		" I don't find Ex mode much useful, also it bothers me to write visual
+		" all the time
+		noremap Q <nop>
+
 		" fix for screen / byobu (Del, Home, End)
 		imap <ESC>[7~ <Home>
 
@@ -62,7 +66,7 @@
 		let mapleader = ','
 
 		" code folding
-		map <leader>f :set foldmethod=indent<CR><ESC>
+		map <leader>f :setlocal foldmethod=indent<CR><ESC>
 
 		" Tabs listing
 		map <leader>t :tabs<CR>
