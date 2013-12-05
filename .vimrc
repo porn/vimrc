@@ -158,6 +158,7 @@
 		set wildmode=list:longest,full	" command <Tab> completion, list matches, then longest common part, then all.
 		set scrolloff=3 				" minimum lines to keep above and below cursor
 		set colorcolumn=80				" colorize 80th column (requires vim >= 7.3)
+		set tabpagemax=30				" open max 30 tabs with vim -p * (default is 10)
 
 		if has('cmdline_info')
 			set ruler					" show the ruler
