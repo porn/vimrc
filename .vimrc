@@ -7,6 +7,10 @@
 " TODO unsorted ... {
 	runtime! debian.vim
 
+	" php function text object
+	vnoremap af :<C-U>normal va{o{<CR>
+	omap af :normal Vaf<CR>
+
 	set modeline
 	set runtimepath+=~/.vim/
 
