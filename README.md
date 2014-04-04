@@ -12,6 +12,8 @@ have to deal with. Optimized for PHP.
  - plugins system
  - features (describe <Fx> shortcuts)
  - set font for gvim
+ - install spellchecker
+ - move PHP specific settings to php ftplugin
 
 ## Hotkeys
 
