@@ -504,6 +504,7 @@ crack_opendict()	php_manual.txt	/*crack_opendict()*
 crc32()	php_manual.txt	/*crc32()*
 create_function()	php_manual.txt	/*create_function()*
 crypt()	php_manual.txt	/*crypt()*
+cs	surround.txt	/*cs*
 ctype_alnum()	php_manual.txt	/*ctype_alnum()*
 ctype_alpha()	php_manual.txt	/*ctype_alpha()*
 ctype_cntrl()	php_manual.txt	/*ctype_cntrl()*
@@ -686,6 +687,7 @@ domxml_xslt_stylesheet_doc()	php_manual.txt	/*domxml_xslt_stylesheet_doc()*
 domxml_xslt_stylesheet_file()	php_manual.txt	/*domxml_xslt_stylesheet_file()*
 dotnet_load()	php_manual.txt	/*dotnet_load()*
 doubleval()	php_manual.txt	/*doubleval()*
+ds	surround.txt	/*ds*
 each()	php_manual.txt	/*each()*
 easter_date()	php_manual.txt	/*easter_date()*
 easter_days()	php_manual.txt	/*easter_days()*
@@ -1182,6 +1184,8 @@ hw_unlock()	php_manual.txt	/*hw_unlock()*
 hw_who()	php_manual.txt	/*hw_who()*
 hwapi_hgcsp()	php_manual.txt	/*hwapi_hgcsp()*
 hypot()	php_manual.txt	/*hypot()*
+i_CTRL-G_S	surround.txt	/*i_CTRL-G_S*
+i_CTRL-G_s	surround.txt	/*i_CTRL-G_s*
 ibase_add_user()	php_manual.txt	/*ibase_add_user()*
 ibase_affected_rows()	php_manual.txt	/*ibase_affected_rows()*
 ibase_backup()	php_manual.txt	/*ibase_backup()*
@@ -3337,6 +3341,13 @@ substr()	php_manual.txt	/*substr()*
 substr_compare()	php_manual.txt	/*substr_compare()*
 substr_count()	php_manual.txt	/*substr_count()*
 substr_replace()	php_manual.txt	/*substr_replace()*
+surround	surround.txt	/*surround*
+surround-customizing	surround.txt	/*surround-customizing*
+surround-issues	surround.txt	/*surround-issues*
+surround-mappings	surround.txt	/*surround-mappings*
+surround-replacements	surround.txt	/*surround-replacements*
+surround-targets	surround.txt	/*surround-targets*
+surround.txt	surround.txt	/*surround.txt*
 swf_actiongeturl()	php_manual.txt	/*swf_actiongeturl()*
 swf_actiongotoframe()	php_manual.txt	/*swf_actiongotoframe()*
 swf_actiongotolabel()	php_manual.txt	/*swf_actiongotolabel()*
@@ -3560,6 +3571,7 @@ usleep()	php_manual.txt	/*usleep()*
 usort()	php_manual.txt	/*usort()*
 utf8_decode()	php_manual.txt	/*utf8_decode()*
 utf8_encode()	php_manual.txt	/*utf8_encode()*
+vS	surround.txt	/*vS*
 v_[e	unimpaired.txt	/*v_[e*
 v_[u	unimpaired.txt	/*v_[u*
 v_[x	unimpaired.txt	/*v_[x*
@@ -3621,6 +3633,7 @@ vcscommand-statusline	vcscommand.txt	/*vcscommand-statusline*
 vcscommand.txt	vcscommand.txt	/*vcscommand.txt*
 version_compare()	php_manual.txt	/*version_compare()*
 vfprintf()	php_manual.txt	/*vfprintf()*
+vgS	surround.txt	/*vgS*
 virtual()	php_manual.txt	/*virtual()*
 vpopmail_add_alias_domain()	php_manual.txt	/*vpopmail_add_alias_domain()*
 vpopmail_add_alias_domain_ex()	php_manual.txt	/*vpopmail_add_alias_domain_ex()*
@@ -3741,6 +3754,8 @@ yA	unimpaired.txt	/*yA*
 yI	unimpaired.txt	/*yI*
 yO	unimpaired.txt	/*yO*
 yP	unimpaired.txt	/*yP*
+yS	surround.txt	/*yS*
+ySS	surround.txt	/*ySS*
 yaz_addinfo()	php_manual.txt	/*yaz_addinfo()*
 yaz_ccl_conf()	php_manual.txt	/*yaz_ccl_conf()*
 yaz_ccl_parse()	php_manual.txt	/*yaz_ccl_parse()*
@@ -3777,6 +3792,8 @@ yp_master()	php_manual.txt	/*yp_master()*
 yp_match()	php_manual.txt	/*yp_match()*
 yp_next()	php_manual.txt	/*yp_next()*
 yp_order()	php_manual.txt	/*yp_order()*
+ys	surround.txt	/*ys*
+yss	surround.txt	/*yss*
 zend_logo_guid()	php_manual.txt	/*zend_logo_guid()*
 zend_version()	php_manual.txt	/*zend_version()*
 zip_close()	php_manual.txt	/*zip_close()*
