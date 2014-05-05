@@ -4,6 +4,12 @@ My personal vim configuration being used on my laptop as well as on servers I
 have to deal with. Optimized for PHP.
 
 ## Installation
+Quick installation instructions:
+
+    cd
+    git clone https://github.com/porn/vimrc.git
+    ln -s vimrc/.vimrc .
+    ln -s vimrc/.vim .
 
 ## TODO
  - use pathogen?
