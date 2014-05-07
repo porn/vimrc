@@ -145,6 +145,7 @@
 
 	" Vim UI {
 
+		set guifont=Monospace\ 13		" use some readable font for gvim
 		colorscheme torte_custom		" my favorite colorscheme
 		autocmd VimResized * wincmd =	" automatically resize win split on window resize
 
