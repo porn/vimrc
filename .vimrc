@@ -8,7 +8,7 @@
 	runtime! debian.vim
 
 	" php function text object
-	vnoremap af :<C-U>normal va{o{<CR>
+	vnoremap af :<C-U>normal va{Vo{<CR>
 	omap af :normal Vaf<CR>
 
 	set modeline
