@@ -1,10 +1,10 @@
-" Modeline and Notes {
-"	vim: set foldmarker={,} foldmethod=marker:
+" Modeline and Notes {{{
+"	vim: set foldmethod=marker foldlevel=99:
 "
-"	Hosted on github: TODO
-" }
+"	Hosted on github: https://github.com/porn/vimrc
+" }}}
 
-" TODO unsorted ... {
+" TODO unsorted ... {{{
 	runtime! debian.vim
 
 	" php function text object
@@ -23,11 +23,11 @@
 		autocmd BufWritePost .vimrc source $MYVIMRC
 	endif
 
-" }
+" }}}
 
-" Key Mappings {
+" Key Mappings {{{
 
-	" Other {
+	" Other {{{
 
 		" I don't find Ex mode much useful, also it bothers me to write visual
 		" all the time
@@ -61,9 +61,9 @@
 		map <C-]> <C-]>zt
 		map g<LeftMouse> g<LeftMouse>zt
 
-	" }
+	" }}}
 
-	" Leader Mappings {
+	" Leader Mappings {{{
 
 		" The default leader is '\', but many people prefer ',' as it's in
 		" a standard location
@@ -81,9 +81,9 @@
 		" edit .vimrc
 		nmap <leader>v :tabedit $MYVIMRC<CR>
 
-	" }
+	" }}}
 
-	" <F2> - <Fx> Mappings {
+	" <F2> - <Fx> Mappings {{{
 
 		" map remove trailing spaces, save all and session save here
 		" TODO breaks last search pattern
@@ -113,9 +113,9 @@
 		" open quickfix window, set it modifiable and having number
 		map <F9> :cw<bar>set invmodifiable<bar>set invnumber<CR>
 
-	" }
+	" }}}
 
-	" Windows and Tabs Switching {
+	" Windows and Tabs Switching {{{
 
 		" Easier moving in tabs
 		map <S-H> gT
@@ -132,10 +132,10 @@
 		" moving (reordering) tabs
 		nnoremap <silent> l :execute 'silent! tabmove ' . tabpagenr()<CR>
 		nnoremap <silent> h :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
-	" }
-" }
+	" }}}
+" }}}
 
-" General {
+" General {{{
 	filetype plugin indent on  	" Automatically detect file types.
 
 	set encoding=utf8			" character encoding used inside Vim
@@ -143,7 +143,7 @@
 	let g:netrw_liststyle=3     " Use tree-mode as default view
 
 
-	" Vim UI {
+	" Vim UI {{{
 
 		set guifont=Monospace\ 13		" use some readable font for gvim
 		colorscheme torte_custom		" my favorite colorscheme
@@ -168,24 +168,25 @@
 										" selected characters/lines in visual mode
 		endif
 
-	" }
 
-	" Formatting {
+	" }}}
+
+	" Formatting {{{
 		set shiftwidth=4		" use indents of 4 spaces
 		set tabstop=4 			" an indentation every four columns
 		set smartindent			" smart autoindenting when starting a new line
 
-	" }
+	" }}}
 
-" }
+" }}}
 
-" Plugins {
+" Plugins {{{
 
-	" Gundo {
+	" Gundo {{{
 		nnoremap <leader>g :GundoToggle<CR>
-	" }
+	" }}}
 
-	" VCS commands {
+	" VCS commands {{{
 		" by default: <leader>cs
 		nmap <leader>vs :VCSStatus<CR>
 		" by default: <leader>cn
@@ -198,14 +199,14 @@
 		nmap <leader>vu :VCSUpdate<CR>
 		" by default: <leader>cv
 		nmap <leader>vv :VCSVimDiff<CR>
-	" }
+	" }}}
 
-	" php-doc commands {
+	" php-doc commands {{{
 		nnoremap <C-P> :call PhpDocSingle()<CR>
 		vnoremap <C-P> :call PhpDocRange()<CR>
-	" }
+	" }}}
 
-	" TagBar {
+	" TagBar {{{
 		let g:tagbar_autofocus = 1
 		let g:tagbar_autoclose = 1
 		let g:tagbar_type_php = {
@@ -223,11 +224,12 @@
 		let g:tagbar_width = 30
 		let g:tagbar_zoomwidth = 0
 		let g:tagbar_iconchars = ['▷', '◢']
-	" }
-" }
 
-" Use local vimrc if available {
+	" }}}
+" }}}
+
+" Use local vimrc if available {{{
 	if filereadable(expand("~/.vimrc.local"))
 		source ~/.vimrc.local
 	endif
-" }
+" }}}
