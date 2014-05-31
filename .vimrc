@@ -7,6 +7,9 @@
 " TODO unsorted ... {{{
 	runtime! debian.vim
 
+	" map %% to dir name of currently active buffer file
+	cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
 	" php function text object
 	vnoremap af :<C-U>normal va{Vo{<CR>
 	omap af :normal Vaf<CR>
