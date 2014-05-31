@@ -171,6 +171,13 @@
 										" selected characters/lines in visual mode
 		endif
 
+		" Folding {{{
+			function! FoldText()
+				let foldsize = (v:foldend-v:foldstart)
+				return '» '.v:folddashes.getline(v:foldstart).' → '.getline(v:foldend).' -- ['.foldsize.' lines] '
+			endfunction
+			set foldtext=FoldText()
+		" }}}
 
 	" }}}
 
