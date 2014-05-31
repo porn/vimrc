@@ -32,6 +32,10 @@
 
 	" Other {{{
 
+		" vimdiff upon: "W11: Warning: File xxx has changed since editing started"
+		" taken from: http://stackoverflow.com/questions/8491110
+		command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
+
 		" I don't find Ex mode much useful, also it bothers me to write visual
 		" all the time
 		noremap Q <nop>
