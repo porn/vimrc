@@ -113,8 +113,8 @@
 		" php syntax validation
 		map <F8> :!php -l %<CR>
 
-		" open quickfix window, set it modifiable and having number
-		map <F9> :cw<bar>set invmodifiable<bar>set invnumber<CR>
+		" open quickfix window, set number
+		map <F9> :copen<bar>setlocal number<CR>
 
 	" }}}
 
@@ -227,7 +227,6 @@
 		let g:tagbar_width = 30
 		let g:tagbar_zoomwidth = 0
 		let g:tagbar_iconchars = ['▷', '◢']
-
 	" }}}
 " }}}
 
