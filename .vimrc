@@ -27,6 +27,7 @@ runtime! debian.vim
 	Plugin 'tpope/vim-fugitive.git'
 	Plugin 'tpope/vim-repeat.git'
 	Plugin 'sjl/gundo.vim.git'
+	Plugin 'nelstrom/vim-visual-star-search.git'
 
 	" " plugin from http://vim-scripts.org/vim/scripts.html
 	" Plugin 'L9'
