@@ -29,6 +29,7 @@ runtime! debian.vim
 	Plugin 'sjl/gundo.vim.git'
 	Plugin 'nelstrom/vim-visual-star-search.git'
 	Plugin 'majutsushi/tagbar'
+	Plugin 'chikamichi/mediawiki.vim.git'
 
 	" " plugin from http://vim-scripts.org/vim/scripts.html
 	" Plugin 'L9'
