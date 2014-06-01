@@ -30,6 +30,7 @@ runtime! debian.vim
 	Plugin 'nelstrom/vim-visual-star-search.git'
 	Plugin 'majutsushi/tagbar'
 	Plugin 'chikamichi/mediawiki.vim.git'
+	Plugin 'chase/vim-ansible-yaml'
 
 	" " plugin from http://vim-scripts.org/vim/scripts.html
 	" Plugin 'L9'
