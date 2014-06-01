@@ -34,6 +34,7 @@ runtime! debian.vim
 	Plugin 'chikamichi/mediawiki.vim.git'
 	Plugin 'chase/vim-ansible-yaml'
 	Plugin 'vim-scripts/vcscommand.vim'
+	Plugin 'sumpygump/php-documentor-vim'
 
 	" " plugin from http://vim-scripts.org/vim/scripts.html
 	" Plugin 'L9'
