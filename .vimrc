@@ -33,6 +33,7 @@ runtime! debian.vim
 	Plugin 'majutsushi/tagbar'
 	Plugin 'chikamichi/mediawiki.vim.git'
 	Plugin 'chase/vim-ansible-yaml'
+	Plugin 'vim-scripts/vcscommand.vim'
 
 	" " plugin from http://vim-scripts.org/vim/scripts.html
 	" Plugin 'L9'
