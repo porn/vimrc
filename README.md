@@ -12,10 +12,8 @@ Quick installation instructions:
     ln -s vimrc/.vim .
 
 ## TODO
- - use pathogen?
  - rename files, complete installation part
  - categorize configs
- - plugins system
  - features (describe <Fx> shortcuts)
  - set font for gvim
  - install spellchecker
