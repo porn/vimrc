@@ -27,6 +27,7 @@ runtime! debian.vim
 	Plugin 'tpope/vim-fugitive.git'
 	Plugin 'tpope/vim-repeat.git'
 	Plugin 'tpope/vim-surround.git'
+	Plugin 'tpope/vim-unimpaired.git'
 	Plugin 'sjl/gundo.vim.git'
 	Plugin 'nelstrom/vim-visual-star-search.git'
 	Plugin 'majutsushi/tagbar'
