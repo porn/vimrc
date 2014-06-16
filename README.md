@@ -3,19 +3,30 @@
 My personal vim configuration being used on my laptop as well as on servers I
 have to deal with. Optimized for PHP.
 
-## Installation
-Quick installation instructions:
+## Installation instructions
+Clone repository to your home:
 
     cd
-    git clone https://github.com/porn/vimrc.git
+    git clone --recursive https://github.com/porn/vimrc.git
+
+Symlink cloned files:
+
     ln -s vimrc/.vimrc .
     ln -s vimrc/.vim .
 
+Initialize plugins using Vundle:
+
+    vim +PluginInstall +qall
+
+Optionally PHP manual pages can be installed using PECL:
+
+    sudo pear channel-update
+    sudo pear install doc.php.net/pman
+
+
 ## TODO
- - use pathogen?
  - rename files, complete installation part
  - categorize configs
- - plugins system
  - features (describe <Fx> shortcuts)
  - set font for gvim
  - install spellchecker

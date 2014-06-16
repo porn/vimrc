@@ -4,9 +4,66 @@
 "	Hosted on github: https://github.com/porn/vimrc
 " }}}
 
-" TODO unsorted ... {{{
-	runtime! debian.vim
+" This line should not be removed as it ensures that various options are
+" properly set to work with the Vim-related packages available in Debian.
+runtime! debian.vim
 
+" Vundle ... {{{
+	set nocompatible              " be iMproved, required
+	filetype off                  " required
+
+	" set the runtime path to include Vundle and initialize
+	set rtp+=~/.vim/bundle/Vundle.vim
+	call vundle#begin()
+	" alternatively, pass a path where Vundle should install plugins
+	"call vundle#begin('~/some/path/here')
+
+	" let Vundle manage Vundle, required
+	Plugin 'gmarik/Vundle.vim'
+
+	" The following are examples of different formats supported.
+	" Keep Plugin commands between vundle#begin/end.
+	" plugin on GitHub repo
+	Plugin 'tpope/vim-fugitive.git'
+	Plugin 'tpope/vim-repeat.git'
+	Plugin 'tpope/vim-surround.git'
+	Plugin 'tpope/vim-unimpaired.git'
+	Plugin 'sjl/gundo.vim.git'
+	Plugin 'nelstrom/vim-visual-star-search.git'
+	Plugin 'majutsushi/tagbar'
+	Plugin 'chikamichi/mediawiki.vim.git'
+	Plugin 'chase/vim-ansible-yaml'
+	Plugin 'vim-scripts/vcscommand.vim'
+	Plugin 'sumpygump/php-documentor-vim'
+
+	" " plugin from http://vim-scripts.org/vim/scripts.html
+	" Plugin 'L9'
+	" " Git plugin not hosted on GitHub
+	" Plugin 'git://git.wincent.com/command-t.git'
+	" " git repos on your local machine (i.e. when working on your own plugin)
+	" Plugin 'file:///home/gmarik/path/to/plugin'
+	" " The sparkup vim script is in a subdirectory of this repo called vim.
+	" " Pass the path to set the runtimepath properly.
+	" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+	" " Avoid a name conflict with L9
+	" Plugin 'user/L9', {'name': 'newL9'}
+
+	" All of your Plugins must be added before the following line
+	call vundle#end()            " required
+	filetype plugin indent on    " required
+
+	" Brief help
+	" :PluginList          - list configured plugins
+	" :PluginInstall(!)    - install (update) plugins
+	" :PluginSearch(!) foo - search (or refresh cache first) for foo
+	" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
+	"
+	" see :h vundle for more details or wiki for FAQ
+	" Put your non-Plugin stuff after this line
+
+" }}}
+
+" TODO unsorted ... {{{
 	" map %% to dir name of currently active buffer file
 	cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
