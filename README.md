@@ -34,7 +34,6 @@ Optionally PHP manual pages can be installed using PECL:
  - rename files, complete installation part
  - categorize configs
  - features (describe <Fx> shortcuts)
- - set font for gvim
  - install spellchecker
  - move PHP specific settings to php ftplugin
 
