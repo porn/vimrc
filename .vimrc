@@ -75,6 +75,9 @@ runtime! debian.vim
 	set modeline
 	set runtimepath+=~/.vim/
 
+	" add HORIZONTAL ELLIPSIS (…) digraph
+	digraphs 3. 8230
+
 
 	" load .vimrc upon every save
 	if has("autocmd")
