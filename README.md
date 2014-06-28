@@ -14,6 +14,12 @@ Symlink cloned files:
     ln -s vimrc/.vimrc .
     ln -s vimrc/.vim .
 
+Initialize & update Vundle submodule:
+
+	cd vimrc
+	git submodule init
+	git submodule update
+
 Initialize plugins using Vundle:
 
     vim +PluginInstall +qall
