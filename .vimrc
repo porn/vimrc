@@ -74,9 +74,6 @@ runtime! debian.vim
 	set modeline
 	set runtimepath+=~/.vim/
 
-	" php offline manuals
-	set runtimepath+=~/.vim/doc
-	autocmd BufNewFile,Bufread *.php,*.php3,*.php4 set keywordprg="help"
 
 	" load .vimrc upon every save
 	if has("autocmd")
