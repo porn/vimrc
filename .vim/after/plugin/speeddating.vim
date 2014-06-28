@@ -1,0 +1,1 @@
+SpeedDatingFormat %H:%M
