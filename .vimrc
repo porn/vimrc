@@ -237,7 +237,7 @@ runtime! debian.vim
 		" Folding {{{
 			function! FoldText()
 				let foldsize = (v:foldend-v:foldstart)
-				return '» '.v:folddashes.getline(v:foldstart).' → '.getline(v:foldend).' -- ['.foldsize.' lines] '
+				return '» ['.foldsize.' lines] » '.v:folddashes.getline(v:foldstart).' → '.getline(v:foldend)
 			endfunction
 			set foldtext=FoldText()
 		" }}}
