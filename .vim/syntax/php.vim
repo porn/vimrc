@@ -372,29 +372,29 @@ syn keyword phpTodo todo fixme xxx  contained
 
 " Comment
 if exists("php_parent_error_open")
-  syn region  phpComment  start="/\*" end="\*/" contained contains=phpTodo
+  syn region  phpComment  start="/\*" end="\*/" contained contains=@Spell,phpTodo
 else
-  syn region  phpComment  start="/\*" end="\*/" contained contains=phpTodo extend
+  syn region  phpComment  start="/\*" end="\*/" contained contains=@Spell,phpTodo extend
 endif
 if version >= 600
-  syn match phpComment  "#.\{-}\(?>\|$\)\@="  contained contains=phpTodo
-  syn match phpComment  "//.\{-}\(?>\|$\)\@=" contained contains=phpTodo
+  syn match phpComment  "#.\{-}\(?>\|$\)\@="  contained contains=@Spell,phpTodo
+  syn match phpComment  "//.\{-}\(?>\|$\)\@=" contained contains=@Spell,phpTodo
 else
-  syn match phpComment  "#.\{-}$" contained contains=phpTodo
-  syn match phpComment  "#.\{-}?>"me=e-2  contained contains=phpTodo
-  syn match phpComment  "//.\{-}$"  contained contains=phpTodo
-  syn match phpComment  "//.\{-}?>"me=e-2 contained contains=phpTodo
+  syn match phpComment  "#.\{-}$" contained contains=@Spell,phpTodo
+  syn match phpComment  "#.\{-}?>"me=e-2  contained contains=@Spell,phpTodo
+  syn match phpComment  "//.\{-}$"  contained contains=@Spell,phpTodo
+  syn match phpComment  "//.\{-}?>"me=e-2 contained contains=@Spell,phpTodo
 endif
 
 " String
 if exists("php_parent_error_open")
-  syn region  phpStringDouble matchgroup=None start=+"+ skip=+\\\\\|\\"+ end=+"+  contains=@phpAddStrings,phpBackslashSequences,phpBackslashDoubleQuote,@phpInterpDouble contained keepend
-  syn region  phpBacktick matchgroup=None start=+`+ skip=+\\\\\|\\"+ end=+`+  contains=@phpAddStrings,phpIdentifier,phpBackslashSequences,phpIdentifierSimply,phpIdentifierComplex contained keepend
-  syn region  phpStringSingle matchgroup=None start=+'+ skip=+\\\\\|\\'+ end=+'+  contains=@phpAddStrings,phpBackslashSingleQuote contained keepend
+  syn region  phpStringDouble matchgroup=None start=+"+ skip=+\\\\\|\\"+ end=+"+  contains=@Spell,phpAddStrings,phpBackslashSequences,phpBackslashDoubleQuote,@phpInterpDouble contained keepend
+  syn region  phpBacktick matchgroup=None start=+`+ skip=+\\\\\|\\"+ end=+`+  contains=@Spell,phpAddStrings,phpIdentifier,phpBackslashSequences,phpIdentifierSimply,phpIdentifierComplex contained keepend
+  syn region  phpStringSingle matchgroup=None start=+'+ skip=+\\\\\|\\'+ end=+'+  contains=@Spell,phpAddStrings,phpBackslashSingleQuote contained keepend
 else
-  syn region  phpStringDouble matchgroup=None start=+"+ skip=+\\\\\|\\"+ end=+"+  contains=@phpAddStrings,phpBackslashSequences,phpBackslashDoubleQuote,@phpInterpDouble contained extend keepend
-  syn region  phpBacktick matchgroup=None start=+`+ skip=+\\\\\|\\"+ end=+`+  contains=@phpAddStrings,phpIdentifier,phpBackslashSequences,phpIdentifierSimply,phpIdentifierComplex contained extend keepend
-  syn region  phpStringSingle matchgroup=None start=+'+ skip=+\\\\\|\\'+ end=+'+  contains=@phpAddStrings,phpBackslashSingleQuote contained keepend extend
+  syn region  phpStringDouble matchgroup=None start=+"+ skip=+\\\\\|\\"+ end=+"+  contains=@Spell,phpAddStrings,phpBackslashSequences,phpBackslashDoubleQuote,@phpInterpDouble contained extend keepend
+  syn region  phpBacktick matchgroup=None start=+`+ skip=+\\\\\|\\"+ end=+`+  contains=@Spell,phpAddStrings,phpIdentifier,phpBackslashSequences,phpIdentifierSimply,phpIdentifierComplex contained extend keepend
+  syn region  phpStringSingle matchgroup=None start=+'+ skip=+\\\\\|\\'+ end=+'+  contains=@Spell,phpAddStrings,phpBackslashSingleQuote contained keepend extend
 endif
 
 " HereDoc and NowDoc
