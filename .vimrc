@@ -79,6 +79,11 @@ runtime! debian.vim
 	" add HORIZONTAL ELLIPSIS (…) digraph
 	digraphs 3. 8230
 
+	" http://vim.wikia.com/wiki/Ignore_white_space_in_vimdiff
+	if &diff
+		" diff mode
+		set diffopt+=iwhite
+	endif
 
 	" load .vimrc upon every save
 	if has("autocmd")
