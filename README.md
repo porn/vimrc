@@ -13,6 +13,7 @@ Symlink cloned files:
 
     ln -s vimrc/.vimrc .
     ln -s vimrc/.vim .
+    ln -s vimrc/.gvimrc .
 
 Initialize plugins using Vundle:
 
