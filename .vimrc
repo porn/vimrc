@@ -37,6 +37,7 @@ runtime! debian.vim
 	Plugin 'chase/vim-ansible-yaml'
 	Plugin 'vim-scripts/vcscommand.vim'
 	Plugin 'sumpygump/php-documentor-vim'
+	Plugin 'itchyny/lightline.vim'
 
 	" " plugin from http://vim-scripts.org/vim/scripts.html
 	" Plugin 'L9'
@@ -302,6 +303,31 @@ runtime! debian.vim
 		let g:tagbar_zoomwidth = 0
 		let g:tagbar_iconchars = ['▷', '◢']
 	" }}}
+
+	" lightline {{{
+		set laststatus=2
+		" set noshowmode
+		let g:lightline = {
+			\ 'colorscheme': 'wombat',
+			\ 'active': {
+			\   'left': [ [ 'mode', 'paste' ],
+			\             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+			\ },
+			\ 'component': {
+			\   'readonly': '%{&filetype=="help"?"":&readonly?"":""}',
+			\   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+			\   'fugitive': '%{exists("*fugitive#head")?" ".fugitive#head():""}'
+			\ },
+			\ 'component_visible_condition': {
+			\   'readonly': '(&filetype!="help"&& &readonly)',
+			\   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+			\   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+			\ },
+			\ 'separator': { 'left': '', 'right': '' },
+			\ 'subseparator': { 'left': '', 'right': '' }
+			\ }
+	" }}}
+
 " }}}
 
 " Use local vimrc if available {{{
