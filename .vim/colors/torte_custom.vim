@@ -56,3 +56,10 @@ highlight Title       ctermfg=White
 
 highlight CursorLine   cterm=NONE ctermbg=DarkRed
 highlight CursorColumn cterm=NONE ctermbg=LightGrey ctermfg=white
+
+" readable colours for vimdiff
+highlight DiffText     term=reverse cterm=bold ctermfg=10 ctermbg=9 gui=bold guibg=Red
+
+" readable colours for autocomplete
+highlight Pmenu        ctermfg=14 ctermbg=242 guifg=Cyan guibg=DarkGrey
+highlight PmenuSel     cterm=bold ctermfg=14 ctermbg=4 guibg=DarkBlue
