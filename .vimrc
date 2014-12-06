@@ -306,6 +306,7 @@ runtime! debian.vim
 
 	" lightline {{{
 		set laststatus=2
+		set t_Co=256
 		" set noshowmode
 		let g:lightline = {
 			\ 'colorscheme': 'wombat',
