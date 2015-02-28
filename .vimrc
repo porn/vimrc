@@ -167,7 +167,7 @@ runtime! debian.vim
 		map! <F3> <ESC>:wa<CR>
 
 		" map paired tag closing
-		inoremap <F4> </><ESC>2F<yef/pF<xF<i
+		inoremap <F4> </><ESC>m`2F<ye``PF<xF<i
 
 		" toggle tagbar (tagbar plugin)
 		map <F4> :TagbarToggle<CR>
