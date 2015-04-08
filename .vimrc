@@ -81,6 +81,8 @@ runtime! debian.vim
 
 	" add HORIZONTAL ELLIPSIS (…) digraph
 	digraphs 3. 8230
+	" add DOUBLE EXCLAMATION MARK (‼) digraph
+	digraphs !! 8252
 
 	" http://vim.wikia.com/wiki/Ignore_white_space_in_vimdiff
 	if &diff
