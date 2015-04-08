@@ -39,6 +39,7 @@ runtime! debian.vim
 	Plugin 'sumpygump/php-documentor-vim'
 	Plugin 'itchyny/lightline.vim'
 	Plugin 'vim-scripts/confluencewiki.vim'
+	Plugin 'scrooloose/nerdtree'
 
 	" " plugin from http://vim-scripts.org/vim/scripts.html
 	" Plugin 'L9'
