@@ -132,6 +132,9 @@ runtime! debian.vim
 		vnoremap <Return> zA
 		autocmd CmdwinEnter * nunmap <Return>
 		autocmd CmdwinLeave * nnoremap <Return> zA
+		" In the quickfix window, <CR> is used to jump to the error under the
+		" cursor, so undefine the mapping there.
+		autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
 
 		" move the line with the tag definition at top of window when jumping
 		map <C-]> <C-]>zt
