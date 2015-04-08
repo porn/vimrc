@@ -38,6 +38,7 @@ runtime! debian.vim
 	Plugin 'vim-scripts/vcscommand.vim'
 	Plugin 'sumpygump/php-documentor-vim'
 	Plugin 'itchyny/lightline.vim'
+	Plugin 'vim-scripts/confluencewiki.vim'
 
 	" " plugin from http://vim-scripts.org/vim/scripts.html
 	" Plugin 'L9'
