@@ -1,3 +1,4 @@
+--langmap=PHP:.php.phpt
 --python-kinds=-i
 --PHP-kinds=-v
 --regex-PHP=/interface\s+([^ ]+)/\1/c/
