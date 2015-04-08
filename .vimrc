@@ -37,6 +37,8 @@ runtime! debian.vim
 	Plugin 'chase/vim-ansible-yaml'
 	Plugin 'vim-scripts/vcscommand.vim'
 	Plugin 'sumpygump/php-documentor-vim'
+	Plugin 'vim-scripts/confluencewiki.vim'
+	Plugin 'scrooloose/nerdtree'
 
 	" " plugin from http://vim-scripts.org/vim/scripts.html
 	" Plugin 'L9'
@@ -78,6 +80,8 @@ runtime! debian.vim
 
 	" add HORIZONTAL ELLIPSIS (…) digraph
 	digraphs 3. 8230
+	" add DOUBLE EXCLAMATION MARK (‼) digraph
+	digraphs !! 8252
 
 	" http://vim.wikia.com/wiki/Ignore_white_space_in_vimdiff
 	if &diff
@@ -127,6 +131,9 @@ runtime! debian.vim
 		vnoremap <Return> zA
 		autocmd CmdwinEnter * nunmap <Return>
 		autocmd CmdwinLeave * nnoremap <Return> zA
+		" In the quickfix window, <CR> is used to jump to the error under the
+		" cursor, so undefine the mapping there.
+		autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
 
 		" move the line with the tag definition at top of window when jumping
 		map <C-]> <C-]>zt
@@ -302,6 +309,11 @@ runtime! debian.vim
 		let g:tagbar_zoomwidth = 0
 		let g:tagbar_iconchars = ['▷', '◢']
 	" }}}
+
+	" NERDTree {{{
+		map <C-n> :NERDTreeToggle<CR>
+	" }}}
+
 " }}}
 
 " Use local vimrc if available {{{
