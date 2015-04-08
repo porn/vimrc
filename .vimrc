@@ -336,6 +336,10 @@ runtime! debian.vim
 			\ }
 	" }}}
 
+	" NERDTree {{{
+		map <C-n> :NERDTreeToggle<CR>
+	" }}}
+
 " }}}
 
 " Use local vimrc if available {{{
