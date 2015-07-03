@@ -35,7 +35,7 @@ runtime! debian.vim
 	Plugin 'majutsushi/tagbar'
 	Plugin 'chikamichi/mediawiki.vim.git'
 	Plugin 'chase/vim-ansible-yaml'
-	Plugin 'vim-scripts/vcscommand.vim'
+	" Plugin 'vim-scripts/vcscommand.vim'
 	Plugin 'sumpygump/php-documentor-vim'
 	Plugin 'itchyny/lightline.vim'
 	Plugin 'vim-scripts/confluencewiki.vim'
@@ -271,19 +271,12 @@ runtime! debian.vim
 		nnoremap <leader>g :GundoToggle<CR>
 	" }}}
 
-	" VCS commands {{{
-		" by default: <leader>cs
-		nmap <leader>vs :VCSStatus<CR>
-		" by default: <leader>cn
-		nmap <leader>vb :VCSBlame<CR>
-		" by default: <leader>cd
-		nmap <leader>vd :VCSDiff<CR>
-		" by default: <leader>cl
-		nmap <leader>vl :VCSLog<CR>
-		" by default: <leader>cu
-		nmap <leader>vu :VCSUpdate<CR>
-		" by default: <leader>cv
-		nmap <leader>vv :VCSVimDiff<CR>
+	" Fugitive commands {{{
+		set diffopt+=vertical
+		nmap <leader>vc :Gcommit<CR>
+		nmap <leader>vb :Gblame<CR>
+		nmap <leader>vs :Gstatus<CR>
+		nmap <leader>vv :Gdiff<CR>
 	" }}}
 
 	" php-doc commands {{{
