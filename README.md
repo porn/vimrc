@@ -42,5 +42,5 @@ The config uses a lot of various key bindings. For full list see the `.vimrc` fi
 
 Note: `<leader>` is set to the comma (`,`) key.
 
- - `<leader>/` - unhighlight the last search occurrences
- - `<leader>n` - count occurrences of last search
+ - `,/` - unhighlight the last search occurrences
+ - `,n` - count occurrences of last search
