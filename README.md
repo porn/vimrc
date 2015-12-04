@@ -1,38 +1,49 @@
-# vimrc
+# vimrc                                                                                                                                                                                                              
+                                                                                                                                                                                                                     
+My personal vim configuration being used on my laptop as well as on servers I                                                                                                                                                                      
+have to deal with. Optimized for PHP.                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                   
+# Installation                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                   
+* Download or clone the repository to some directory (e.g. `~/github/porn/vimrc/`).                                                                                                                                                                
+Clone repository to your home:                                                                                                                                                                                                                     
 
-My personal vim configuration being used on my laptop as well as on servers I
-have to deal with. Optimized for PHP.
+```
+cd
+mkdir -p github/porn
+cd github/porn
+git clone --recursive https://github.com/porn/vimrc.git
+```
 
-## Installation instructions
-Clone repository to your home:
+* Symlink cloned files:
 
-    cd
-    git clone --recursive https://github.com/porn/vimrc.git
+```
+ln -s vimrc/.vimrc ~
+ln -s vimrc/.vim ~
+ln -s vimrc/.gvimrc ~
+```
 
-Symlink cloned files:
+* Initialize plugins using Vundle:
 
-    ln -s vimrc/.vimrc .
-    ln -s vimrc/.vim .
-    ln -s vimrc/.gvimrc .
+```
+vim +PluginInstall +qall
+```
 
-Initialize plugins using Vundle:
+* Optionally PHP manual pages can be installed using PECL:
 
-    vim +PluginInstall +qall
+```
+sudo pear channel-update
+sudo pear install doc.php.net/pman
+```
 
-Optionally PHP manual pages can be installed using PECL:
-
-    sudo pear channel-update
-    sudo pear install doc.php.net/pman
-
-
-## TODO
+# TODO
  - rename files, complete installation part
  - categorize configs
  - features (describe <Fx> shortcuts)
  - install spellchecker
  - move PHP specific settings to php ftplugin
 
-## Hotkeys
+# Hotkeys
 
 The config uses a lot of various key bindings. For full list see the `.vimrc` file directly=)
 Note: `<leader>` is set to the comma (`,`) key.
