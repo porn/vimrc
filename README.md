@@ -18,9 +18,9 @@ git clone --recursive https://github.com/porn/vimrc.git
 * Symlink cloned files:
 
 ```
-ln -s vimrc/.vimrc ~
-ln -s vimrc/.vim ~
-ln -s vimrc/.gvimrc ~
+ln -s ~/github/porn/vimrc/.vimrc ~
+ln -s ~/github/porn/vimrc/.vim ~
+ln -s ~/github/porn/vimrc/.gvimrc ~
 ```
 
 * Initialize plugins using Vundle:
