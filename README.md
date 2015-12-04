@@ -1,12 +1,12 @@
-# vimrc                                                                                                                                                                                                              
-                                                                                                                                                                                                                     
-My personal vim configuration being used on my laptop as well as on servers I                                                                                                                                                                      
-have to deal with. Optimized for PHP.                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                   
-# Installation                                                                                                                                                                                                                                     
-                                                                                                                                                                                                                                                   
-* Download or clone the repository to some directory (e.g. `~/github/porn/vimrc/`).                                                                                                                                                                
-Clone repository to your home:                                                                                                                                                                                                                     
+# vimrc
+
+My personal vim configuration being used on my laptop as well as on servers I
+have to deal with. Optimized for PHP.
+
+# Installation
+
+* Download or clone the repository to some directory (e.g. `~/github/porn/vimrc/`).
+Clone repository to your home:
 
 ```
 cd
