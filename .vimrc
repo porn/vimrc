@@ -114,6 +114,9 @@ runtime! debian.vim
 		" jj instead of esc
 		inoremap jj <ESC>
 
+		" count occurrences of last search
+		nnoremap <leader>n :%s///gn <CR>
+
 		" Center on found pattern
 		nnoremap N Nzz
 		nnoremap n nzz
