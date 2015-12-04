@@ -5,7 +5,7 @@ have to deal with. Optimized for PHP.
 
 # Installation
 
-* Download or clone the repository to some directory (e.g. `~/github/porn/vimrc/`).
+* Download or clone the repository to some directory (e.g. `~/github/porn/vimrc/`):
 ```
 cd
 mkdir -p github/porn
