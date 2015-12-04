@@ -6,8 +6,6 @@ have to deal with. Optimized for PHP.
 # Installation
 
 * Download or clone the repository to some directory (e.g. `~/github/porn/vimrc/`).
-Clone repository to your home:
-
 ```
 cd
 mkdir -p github/porn
@@ -16,7 +14,6 @@ git clone --recursive https://github.com/porn/vimrc.git
 ```
 
 * Symlink cloned files:
-
 ```
 ln -s ~/github/porn/vimrc/.vimrc ~
 ln -s ~/github/porn/vimrc/.vim ~
@@ -24,13 +21,11 @@ ln -s ~/github/porn/vimrc/.gvimrc ~
 ```
 
 * Initialize plugins using Vundle:
-
 ```
 vim +PluginInstall +qall
 ```
 
 * Optionally PHP manual pages can be installed using PECL:
-
 ```
 sudo pear channel-update
 sudo pear install doc.php.net/pman
