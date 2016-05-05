@@ -238,6 +238,9 @@ runtime! debian.vim
 		set scrolloff=3 				" minimum lines to keep above and below cursor
 		set colorcolumn=80				" colorize 80th column (requires vim >= 7.3)
 		set tabpagemax=30				" open max 30 tabs with vim -p * (default is 10)
+		set showbreak=↪\ 				" line wrap symbol
+		set sidescroll=1				" incrementally scroll one character at a time
+		set sidescrolloff=6				" minimal number of screen columns to keep of the cursor if 'nowrap' is set
 
 		if has('cmdline_info')
 			set ruler					" show the ruler
