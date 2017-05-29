@@ -319,7 +319,7 @@ runtime! debian.vim
 	" lightline {{{
 		set laststatus=2
 		set t_Co=256
-		" set noshowmode
+		" set noshowmode  " get rid of the extraneous default vim mode information that is now provided by lightline
 		let g:lightline = {
 			\ 'colorscheme': 'wombat',
 			\ 'active': {
