@@ -41,6 +41,7 @@ runtime! debian.vim
 	Plugin 'scrooloose/nerdtree'
 	Plugin 'tpope/vim-commentary'
 	Plugin 'davidhalter/jedi-vim'
+	Plugin 'scrooloose/syntastic'
 
 	" " plugin from http://vim-scripts.org/vim/scripts.html
 	" Plugin 'L9'
