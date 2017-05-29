@@ -1,4 +1,4 @@
 " Vim filetype plugin file
-" Language:	yml
+" Language:	python
 
 set expandtab
