@@ -40,6 +40,7 @@ runtime! debian.vim
 	Plugin 'itchyny/lightline.vim'
 	Plugin 'vim-scripts/confluencewiki.vim'
 	Plugin 'scrooloose/nerdtree'
+	Plugin 'tpope/vim-commentary'
 
 	" " plugin from http://vim-scripts.org/vim/scripts.html
 	" Plugin 'L9'
@@ -114,6 +115,9 @@ runtime! debian.vim
 
 		" jj instead of esc
 		inoremap jj <ESC>
+
+		" count occurrences of last search
+		nnoremap <leader>n :%s///gn <CR>
 
 		" Center on found pattern
 		nnoremap N Nzz
@@ -272,6 +276,11 @@ runtime! debian.vim
 
 	" Gundo {{{
 		nnoremap <leader>g :GundoToggle<CR>
+	" }}}
+	"
+	" Commentary {{{
+		nmap <C-_> :Commentary<CR>
+		vmap <C-_> :Commentary<CR>
 	" }}}
 
 	" Fugitive commands {{{
