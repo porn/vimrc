@@ -40,6 +40,7 @@ runtime! debian.vim
 	Plugin 'vim-scripts/confluencewiki.vim'
 	Plugin 'scrooloose/nerdtree'
 	Plugin 'tpope/vim-commentary'
+	Plugin 'davidhalter/jedi-vim'
 
 	" " plugin from http://vim-scripts.org/vim/scripts.html
 	" Plugin 'L9'
