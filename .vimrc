@@ -39,6 +39,7 @@ runtime! debian.vim
 	Plugin 'sumpygump/php-documentor-vim'
 	Plugin 'vim-scripts/confluencewiki.vim'
 	Plugin 'scrooloose/nerdtree'
+	Plugin 'tpope/vim-commentary'
 
 	" " plugin from http://vim-scripts.org/vim/scripts.html
 	" Plugin 'L9'
@@ -274,6 +275,11 @@ runtime! debian.vim
 
 	" Gundo {{{
 		nnoremap <leader>g :GundoToggle<CR>
+	" }}}
+	"
+	" Commentary {{{
+		nmap <C-_> :Commentary<CR>
+		vmap <C-_> :Commentary<CR>
 	" }}}
 
 	" Fugitive commands {{{
