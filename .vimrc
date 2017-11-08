@@ -43,6 +43,7 @@ runtime! debian.vim
 	Plugin 'tpope/vim-commentary'
 	Plugin 'davidhalter/jedi-vim'
 	Plugin 'scrooloose/syntastic'
+	Plugin 'raimon49/requirements.txt.vim'
 
 	" " plugin from http://vim-scripts.org/vim/scripts.html
 	" Plugin 'L9'
