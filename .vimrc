@@ -34,7 +34,7 @@ runtime! debian.vim
 	Plugin 'nelstrom/vim-visual-star-search.git'
 	Plugin 'majutsushi/tagbar'
 	Plugin 'chikamichi/mediawiki.vim.git'
-	Plugin 'chase/vim-ansible-yaml'
+	Plugin 'pearofducks/ansible-vim'
 	" Plugin 'vim-scripts/vcscommand.vim'
 	Plugin 'sumpygump/php-documentor-vim'
 	Plugin 'itchyny/lightline.vim'
