@@ -233,6 +233,7 @@ runtime! debian.vim
 
 		colorscheme torte_custom		" my favorite colorscheme
 		autocmd VimResized * wincmd =	" automatically resize win split on window resize
+		autocmd BufWritePost * if &diff | diffupdate | endif  " update diff view if one of the files is saved
 
 		syntax on 						" syntax highlighting
 		set mouse=a						" automatically enable mouse usage
