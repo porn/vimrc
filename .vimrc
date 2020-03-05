@@ -34,7 +34,7 @@ runtime! debian.vim
 	Plugin 'nelstrom/vim-visual-star-search.git'
 	Plugin 'majutsushi/tagbar'
 	Plugin 'chikamichi/mediawiki.vim.git'
-	Plugin 'chase/vim-ansible-yaml'
+	Plugin 'pearofducks/ansible-vim'
 	" Plugin 'vim-scripts/vcscommand.vim'
 	Plugin 'sumpygump/php-documentor-vim'
 	Plugin 'vim-scripts/confluencewiki.vim'
@@ -215,7 +215,7 @@ runtime! debian.vim
 		noremap <C-L> <C-W>l<C-L>
 
 		" moving (reordering) tabs
-		nnoremap <silent> l :execute 'silent! tabmove ' . tabpagenr()<CR>
+		nnoremap <silent> l :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 		nnoremap <silent> h :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 	" }}}
 " }}}
@@ -232,6 +232,7 @@ runtime! debian.vim
 
 		colorscheme torte_custom		" my favorite colorscheme
 		autocmd VimResized * wincmd =	" automatically resize win split on window resize
+		autocmd BufWritePost * if &diff | diffupdate | endif  " update diff view if one of the files is saved
 
 		syntax on 						" syntax highlighting
 		set mouse=a						" automatically enable mouse usage
