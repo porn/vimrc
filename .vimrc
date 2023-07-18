@@ -283,9 +283,9 @@ runtime! debian.vim
 	" Gundo {{{
 		nnoremap <leader>g :GundoToggle<CR>
 	" }}}
-	"
+
 	" Commentary {{{
-		nmap <C-_> :Commentary<CR>
+		nmap <C-_> :Commentary<CR>j
 		vmap <C-_> :Commentary<CR>
 	" }}}
 
