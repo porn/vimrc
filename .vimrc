@@ -241,6 +241,8 @@ runtime! debian.vim
 		set showmatch					" show matching brackets/parenthesis
 		set incsearch					" find as you type search
 		set hlsearch					" highlight search terms
+		set ignorecase					" ignore case sensitivity in search
+		set smartcase					" ...unless you include upper-case characters
 		set wildmenu					" show list instead of just completing
 		set wildmode=list:longest,full	" command <Tab> completion, list matches, then longest common part, then all.
 		set scrolloff=3 				" minimum lines to keep above and below cursor
