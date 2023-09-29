@@ -43,6 +43,8 @@ runtime! debian.vim
 	Plugin 'davidhalter/jedi-vim'
 	Plugin 'scrooloose/syntastic'
 	Plugin 'raimon49/requirements.txt.vim'
+	" https://github.com/bogado/file-line
+	Plugin 'bogado/file-line'
 
 	" " plugin from http://vim-scripts.org/vim/scripts.html
 	" Plugin 'L9'
