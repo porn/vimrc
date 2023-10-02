@@ -30,7 +30,6 @@ runtime! debian.vim
 	Plugin 'tpope/vim-surround.git'
 	Plugin 'tpope/vim-unimpaired.git'
 	Plugin 'tpope/vim-speeddating.git'
-	Plugin 'sjl/gundo.vim.git'
 	Plugin 'nelstrom/vim-visual-star-search.git'
 	Plugin 'majutsushi/tagbar'
 	Plugin 'chikamichi/mediawiki.vim.git'
