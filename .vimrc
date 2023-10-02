@@ -34,7 +34,6 @@ runtime! debian.vim
 	Plugin 'majutsushi/tagbar'
 	Plugin 'pearofducks/ansible-vim'
 	" Plugin 'vim-scripts/vcscommand.vim'
-	Plugin 'sumpygump/php-documentor-vim'
 	Plugin 'scrooloose/nerdtree'
 	Plugin 'tpope/vim-commentary'
 	Plugin 'davidhalter/jedi-vim'
