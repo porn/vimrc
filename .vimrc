@@ -33,7 +33,6 @@ runtime! debian.vim
 	Plugin 'nelstrom/vim-visual-star-search.git'
 	Plugin 'majutsushi/tagbar'
 	Plugin 'pearofducks/ansible-vim'
-	" Plugin 'vim-scripts/vcscommand.vim'
 	Plugin 'scrooloose/nerdtree'
 	Plugin 'tpope/vim-commentary'
 	Plugin 'davidhalter/jedi-vim'
@@ -289,9 +288,9 @@ runtime! debian.vim
 
 	" Fugitive commands {{{
 		set diffopt+=vertical
-		nmap <leader>vc :Gcommit<CR>
-		nmap <leader>vb :Gblame<CR>
-		nmap <leader>vs :Gstatus<CR>
+		nmap <leader>vc :Git commit<CR>
+		nmap <leader>vb :Git blame<CR>
+		nmap <leader>vs :Git status<CR>
 		nmap <leader>vv :Gdiff<CR>
 	" }}}
 
