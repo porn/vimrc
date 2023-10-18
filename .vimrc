@@ -173,8 +173,9 @@ runtime! debian.vim
 		imap <F2> <ESC><F2>
 
 		" quit all
-		map <F3> :qa<CR>
-		map! <F3> <ESC>:wa<CR>
+		noremap <F3> :qa<CR>
+		map! <F3> <ESC><F3>
+		vmap <F3> <ESC><F3>
 
 		" map paired tag closing
 		inoremap <F4> </><ESC>m`2F<ye``PF<xF<i
