@@ -284,6 +284,7 @@ runtime! debian.vim
 	" Commentary {{{
 		nmap <C-_> :Commentary<CR>j
 		vmap <C-_> :Commentary<CR>
+		autocmd FileType crontab setlocal commentstring=#\ %s
 	" }}}
 
 	" Fugitive commands {{{
