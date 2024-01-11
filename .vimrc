@@ -72,6 +72,9 @@ runtime! debian.vim
 	" map %% to dir name of currently active buffer file
 	cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
+	" gF to open file under cursor in new tab
+	nmap gF <C-W>gf
+
 	" php function text object
 	vnoremap af :<C-U>normal va{Vo{<CR>
 	omap af :normal Vaf<CR>
