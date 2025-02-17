@@ -215,8 +215,8 @@ runtime! debian.vim
 		noremap <C-L> <C-W>l<C-L>
 
 		" moving (reordering) tabs
-		nnoremap <silent> l :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
-		nnoremap <silent> h :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+		nnoremap <silent> l :tabm +1<CR>
+		nnoremap <silent> h :tabm -1<CR>
 	" }}}
 " }}}
 
